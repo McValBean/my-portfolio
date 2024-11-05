@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+     font-family: sans-serif;
+}
+
+header {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        margin: 10%;
+        padding: 1%;
+        white-space: nowrap;
+}
+
+.icon{
+    border: none;
+}
+main {  display: flex;
+        flex-direction: column;
+        width:80%;
+        margin:auto;
+        font-size: 80%;
+}
+
+
+
+a { padding: 2%;
+    margin: 2%;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+a:hover {
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+
+section {
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 3%;
+
+}
+
+details{
+    margin: 1rem;
+}
+
+@media (min-width: 601px)
+{
+    header{
+        margin: 2%;
+
+    }
+}
