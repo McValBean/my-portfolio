@@ -60,19 +60,36 @@
             </article>
         </section><hr>
 
-
+        <div class="form">
         <form action="" method="get">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname" value=" enter first name">
-            <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname" value=" enter lastname">
-            <label for="phonenumber">Phone Number</label>
-                <input type="text " id="phonenumber" name="phonenumber" value="+233 ">
-                <label for="suggestions">Suggestions</label>
-                <input type="text" id="suggestions" name="suggestions" value="">
-                <input type="submit" name="submit" value="submit" class="submit">
-        </form>
 
+        <span class="input">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" value=" enter first name" onclick=" value='' ">
+        </span>
+
+        <span class="input">
+            <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" value=" enter lastname" onclick=" value='' ">
+        </span>
+
+        <span class="input">
+            <label for="number">Phone Number</label>
+                <input type="number" id="number" name="number" value="+233" class="number">
+        </span>
+
+        <span class="input">
+                <label for="suggestions">Suggestions</label>
+                <textarea id="suggestions" name="suggestions"
+                cols="20" rows="5" class="suggestions" value="" onclick=" value='' "> enter your suggestions here
+                    </textarea>
+        </span>
+
+        <span class="input">
+                <input type="submit" name="submit" value="submit" class="submit" onclick="alert('submitted successsfully, thanks for stopping by. :)')">
+        </span>
+        </form>
+    </div>
     </main>
     <aside> </aside>
 <footer>
