@@ -17,7 +17,8 @@ nav {
         justify-content: space-between;
         margin-top: 10%;
         margin-bottom: 10%;
-        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
         white-space: nowrap;
 }
 
@@ -30,18 +31,15 @@ nav {
 main {  display: flex;
         flex-direction: column;
         width:60%;
-        height:100%;
         justify-self: center;
         align-content: center;
         margin:5%;
         font-size: 1rem;
 }
 
-.links {
-    margin-left: 2%;
-}
 
 a { padding: 2%;
+    margin: 1%;
     text-decoration: none;
     font-size: 1rem;
     color: black;
@@ -52,23 +50,33 @@ a:hover {
 }
 
 section {
+    padding: 1%;
+    margin: 1%;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(90, 90, 90);
+}
+
+article {
     padding: 1rem;
     margin: 5%;
-
-
 }
 
  form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
     align-items: center;
     margin: 5%;
-    padding: 5%;
+    padding: 1%;
     box-shadow: 0 0 10px 000000;
 }
 
 input {
+    columns: 5;
     border: 1px solid black;
     border-radius: 2px;
     margin-top: 10%;
@@ -102,20 +110,22 @@ label{
 @media ( max-width: 320px) {
     body , main {
         font-size: 1rem;
-    }
-
-    .links{
         width: 100%;
     }
 
-    nav{
-        
-
+    main {
+        width: 100%;
 
     }
 
-    .links {
-        justify-content: space-between ;
+    section {
+        width: 100%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     nav>span {
@@ -137,6 +147,7 @@ label{
     }
 
     nav{
+
         margin:5%;
 
     }
