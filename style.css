@@ -31,7 +31,7 @@ nav {
 main {  display: flex;
         flex-direction: column;
         width:60%;
-        justify-self: center;
+        justify-self:center;
         align-items: center;
         margin:5%;
         font-size: 1rem;
@@ -71,8 +71,8 @@ article {
 img {
     max-width: 80%;
     -webkit-border-radius: 5px;
-    -moz-border-radius:;
-    -ms-border-radius:;
+    -moz-border-radius: 5px ;
+    -ms-border-radius: 5px;
     -o-border-radius:5px;
     border-radius: 5px;
 }
