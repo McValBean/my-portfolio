@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: hsl(215, 88%, 10%);
+    color: white;
+}
+
+nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        white-space: nowrap;
+}
+
+.icon{
+    border: none;
+    background-color: none;
+    text-decoration: none;
+}
+
+.fa-bars {
+    display: none;
+    color: black;
+
+}
+
+main {  display: flex;
+        flex-direction: column;
+        width:60%;
+        justify-self:center;
+        align-items: center;
+        margin:5%;
+        font-size: 1rem;
+}
+
+
+a { padding: 5%;
+    margin: 1%;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    opacity: 50%;
+}
+a:hover {
+    opacity: 100%;
+}
+
+section {
+    background-color: hsl(216, 50%, 16%);
+    padding: 1%;
+    margin: 1%;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(90, 90, 90);
+}
+
+article {
+    padding: 1rem;
+    margin: 5%;
+}
+ h1{
+            margin-bottom: 5%;
+            font-family: cursive;
+}
+
+img {
+    max-width: 80%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px ;
+    -ms-border-radius: 5px;
+    -o-border-radius:5px;
+    border-radius: 5px;
+}
+
+
+ form {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+    padding: 2%;
+    box-shadow: 0 0 10px 000000;
+}
+
+input , textarea{
+    max-width: 100%;
+    columns: 5;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.overflow{
+    max-width: 100%;
+}
+
+
+label{
+        font-weight: 500;
+        margin: 1% ;
+
+}
+
+.suggestions {
+    margin-left: 3px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+.submit{
+    width: fit-content;
+    background: none;
+    margin-top: 5%;
+    padding: 10%;
+    border-radius: 2px;
+}
+
+
+@media ( max-width: 376px) {
+    body , main {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .fa-bars { display: flex;
+               flex-flow: column wrap;
+    }
+
+    nav>span {
+
+        display: none;
+
+    }
+
+    main {
+        width: 90%;
+
+    }
+
+    section {
+        width: 100%;
+    }
+    nav {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav>button {
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 601px)
+{
+    body{
+        display: grid;
+
+    }
+
+    nav{
+
+        margin:5%;
+
+    }
+
+    main {
+        font-size: 150%;
+    }
+
+    form {
+        margin: auto;
+        padding: 5%;
+        align-items: center;
+    }
+
+        input {
+            margin: 1%;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+            border-radius: 2px;
+}
+    .input {
+        margin: 2% ;
+    }
+
+    .inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:    center;
+    }
+
+}

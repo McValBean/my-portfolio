@@ -7,9 +7,9 @@
 body {
     height: 100vh;
     font-family: sans-serif;
-    background:whitesmoke;
+    background-color: hsl(215, 88%, 10%);
+    color: white;
 }
-
 
 nav {
         display: flex;
@@ -24,7 +24,13 @@ nav {
 
 .icon{
     border: none;
-    background-color: whitesmoke;
+    background-color: none;
+    text-decoration: none;
+}
+
+.fa-bars {
+    display: none;
+    color: black;
 
 }
 
@@ -38,20 +44,21 @@ main {  display: flex;
 }
 
 
-a { padding: 2%;
+a { padding: 5%;
     margin: 1%;
     text-decoration: none;
     font-size: 1rem;
-    color: black;
+    color: white;
+    opacity: 50%;
 }
 a:hover {
-    background-color: rgb(60, 60, 60);
-    color: white;
+    opacity: 100%;
 }
 
 section {
+    background-color: hsl(216, 50%, 16%);
     padding: 1%;
-    margin: 1%;
+    margin: 2%;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
@@ -66,15 +73,17 @@ article {
 }
  h1{
             margin-bottom: 5%;
+            font-family: cursive;
 }
 
 img {
-    max-width: 80%;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px ;
-    -ms-border-radius: 5px;
-    -o-border-radius:5px;
+    width: 90%;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
     border-radius: 5px;
+    text-align: center;
 }
 
 
@@ -131,6 +140,16 @@ label{
         width: 100%;
     }
 
+    .fa-bars { display: flex;
+               flex-flow: column wrap;
+    }
+
+    nav>span {
+
+        display: none;
+
+    }
+
     main {
         width: 90%;
 
@@ -138,17 +157,13 @@ label{
 
     section {
         width: 100%;
+        margin: 5%;
     }
     nav {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row-reverse;
+        justify-content: space-around;
         align-items: center;
-    }
-
-    nav>span {
-        margin-top: 10%;
-        margin-bottom: 10%;
     }
 
     nav>button {
@@ -157,7 +172,7 @@ label{
 
 }
 
-@media (min-width: 801px)
+@media (min-width: 601px)
 {
     body{
         display: grid;
@@ -192,12 +207,5 @@ label{
         margin: 2% ;
     }
 
-    .inner {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:    center;
-    }
 
 }
