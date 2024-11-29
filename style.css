@@ -24,7 +24,6 @@ nav {
         justify-content: space-between;
         justify-self: center;
         overflow: none;
-        position: relative;
         width: 100%;
         height: 100%;
         padding-top: 5%;
@@ -132,9 +131,12 @@ h2 {
     margin-bottom: 2%;
 }
 
-img {
+iframe {
     width: 90%;
-    border-radius:  15px;
+    display: flex;
+    border: none;
+
+
 }
 
 
@@ -206,6 +208,9 @@ form {
     h1 {
         font-size: 2rem;
     }
+    h2 {
+        margin-bottom: 1%;
+    }
 
     .menubar{
     display: flex;
@@ -225,7 +230,7 @@ form {
 
 .mobile_menu{
     display: none;
-    border: 1px solid black;
+    padding: 1%;
     border-radius: 2px;
 }
 
@@ -235,8 +240,8 @@ main {
 }
     section {
         width: 90%;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-top: 1rem;
+        margin-bottom: 10%;
         padding: 5%;
         display: flex;
         flex-direction: column;
@@ -244,6 +249,9 @@ main {
     article {
         margin-top: 5%;
         margin-top: 5%;
+    }
+    iframe {
+        height: 60vh;
     }
 
     .left_half {
@@ -291,6 +299,9 @@ textarea {
     .mobile_menu{
         display: flex;
         overflow: hidden;
+    }
+    iframe {
+        height: 100vh;
     }
 
    .form_section {
