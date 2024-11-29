@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    color: hsl(215, 51%, 70%);
+    background-color: hsl(217, 54%, 11%);
+}
+
+
+@media (min-width:600px) {
+
+    .main {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container {
+       max-width: 20%;
+    }
+
+}
+
+.main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+
+
+}
+
+.container {
+            width: 80%;
+            background-color: hsl(216, 50%, 16%);
+            margin-bottom: 5%;
+
+}
+h3 {
+    font-size: 100%;
+    max-width: 100%;
+}
+
+.parent{
+        max-width: 100%;
+        flex-direction: column;
+        padding: 5%;
+}
+
+.parent:hover {
+
+    .active_text {
+        color: hsl(178, 100%, 50%);
+
+}
+
+.active_img{
+                display: flex;
+                position:absolute ;
+                opacity: 50%;
+}
+}
+
+
+.Equilibrium {
+                position: relative;
+                margin-bottom: 1rem;
+                max-height: 50%;
+                border-radius: 1rem;
+            }
+
+.Equilibrium > img {
+                    width: 100%;
+                    align-items: center;
+
+}
+
+
+.active_img{
+            display: none;
+            background-color:  hsl(178, 100%, 50%);
+        }
+
+.info {
+        margin-top:auto;
+        margin-bottom: auto;
+    }
+
+.Ethereum {
+    color: hsl(178, 100%, 50%) ;
+}
+
+
+p {
+    font-size: 0.5 rem;
+    max-width: 100%;
+}
+
+.rest {
+
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+}
+
+.info {
+    width: 100%;
+}
+
+.left {
+        font-size: 90%;
+        float: left;
+}
+.right {
+    float: right;
+}
+
+.creator {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+
+}
+
+.creator_text {
+
+                height: 4rem;
+
+}
+
+
+ .creator >img {
+    top: 1%;
+    width: 15%;
+    height: 15%;
+    border: 1px solid white;
+    border-radius: 5rem;
+}
+
+
+
+.attribution {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+hr { 
+    size: 0.1%;
+}

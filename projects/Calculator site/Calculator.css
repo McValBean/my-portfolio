@@ -1,0 +1,106 @@
+body {
+    background-color: gray;padding-top: 250px; align-content: center;
+}
+#solarpanel{ background-color: black; align-content: right; margin-left: 150px; min-width: 180px; min-height: 50px; border-radius: 10px; margin-top:0%;
+
+}
+
+form {
+    background-color:rgb(165, 164, 164); border: 3px solid midnightblue; max-width: 455px; border-radius: 15px; max-height: 950px; border-bottom-left-radius: 12%; border-bottom-right-radius: 12%;text-align: center;}
+
+ul {
+        display: flex;  flex-direction: row; max-width: 360px;
+     }
+
+li {
+        display: inline; flex: 1;
+    }
+
+#inscreen {
+         background-color:rgb(90, 100, 50); animation: blink 1s steps(2) infinite; color: rgb(54, 54, 131); width: 350px; height: 35px; font-size: larger; background: cover; border-bottom: 0cm;
+       }
+  
+ #outscreen{
+    background-color:rgb(90, 100, 50); animation: blink 1s steps(2) infinite; color: rgb(54, 54, 131); width: 350px; height: 35px; font-size: larger; background: cover; border-top: 0cm; text-align: right;
+  }     
+
+.delac { 
+    background-color: rgb(255, 68, 0); color:black; padding: 5px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 5px; border-top-left-radius: 5px; min-width: 55px;
+}
+
+#modesetup{
+    font-size: 11px;
+}
+
+em {
+    font-style: normal;
+}
+
+strong {
+    color: black;
+}
+
+div {
+    padding-bottom: 5px;
+}
+
+h5 {
+    padding-bottom: 0%; margin: auto 0;
+}
+
+.toprow {
+    background-color: blue; opacity: 30%; display: inline; color: blue; margin: 3px; min-width: 50px; min-height: 30px;}
+
+#replayleft{
+      border-bottom-left-radius: 50px; border-top-left-radius: 50px; padding: 15px; margin-top: 50px; margin-right: 0cm; border-right:0cm;
+    }
+
+#replayright{
+          border-bottom-right-radius: 50px; border-top-right-radius: 50px; padding: 15px; margin-top: 50px; margin-left: 0cm; border-left: 0cm;
+        }
+
+.midtwo{
+    margin-top:5px;
+}
+
+.toprow#left {
+    border-top-left-radius: 35%; border-bottom-left-radius: 35%; margin-right: 8px;
+}
+
+.toprow#right {
+    border-top-right-radius: 35%; border-bottom-right-radius: 35%;
+}
+
+.middlerow {
+    background-color: rgb(70, 100, 70); color: white; border-radius: 15px; font-size: 15px; min-width: 45px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 5px; border-top-left-radius: 5px; 
+}
+
+.bottomrow {
+    background-color: white; color: black; font-size: 20px; padding-left: 10px; padding-right: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 5px; border-top-left-radius: 5px; min-width: 55px;
+}
+
+.orange{ 
+    color: orange; 
+}
+.green{
+    color: rgb(3, 113, 113);
+}
+.red{
+    color: red;
+}
+
+.bottomrow.nolabel{
+    margin-top: 16px;
+}
+
+#righty{ 
+    margin-right: 5px;  margin-left: 25px; 
+}
+
+#top{
+    margin-bottom: 0px; 
+}
+
+#abc {
+    padding-bottom: 4px;
+}

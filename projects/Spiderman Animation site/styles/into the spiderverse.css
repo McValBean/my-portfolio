@@ -1,0 +1,38 @@
+
+body
+{
+    background-attachment:fixed; background-size: cover; background-position: center; font-size: 25px; font-family:'Open sans', sans-serif; margin-top: 50pt;
+}
+
+  .myclass
+  {
+    text-align: center; color:white; background-color: black; opacity: 80%; border-radius: 20px; letter-spacing: 1px; padding: 30px; /* for the spacing inside the paragrapghs between the border and the text*/
+  }
+
+  a
+  {
+    text-decoration: none; color:white; padding: 20px;
+  }
+
+  li:hover
+  {
+    background-color: red; opacity:80%; 
+  }
+
+  li
+  {
+    display: inline; padding:30px; background-color: black;
+  }
+  
+  button
+  {
+  padding: 15px; font-family: 'Times New Roman', Times, serif; background-color: black; color: red; font-size: 25px; border-radius: 40px;}
+
+  .marquee
+  {
+    color: red; padding-bottom: 15px; font-size: 30px; white-space: nowrap;  width: 100%;/*this is so it spans the whole page*/
+  }
+h1{color: red;text-align: center; background-color: black; opacity:70;}
+p{ background-color: black; opacity: 80%; border-radius:"50%";}
+
+h1{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}

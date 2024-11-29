@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Calculator.css" />
+<title>Calculator Project</title>
+</head>
+
+<body>
+
+    <center>
+        <form>
+            <div id="righty">
+                <h2 style="text-align: left; margin-bottom: 0%;">CASIO</h2>
+
+                <button id="solarpanel" onclick="alert('Did you really expect it to do something?')">
+                </button><br>
+
+                <strong style="font-size: 10px; margin-left:200px;">
+                    TWO-WAY POWER
+                </strong><br>
+
+                <I style="text-align: left; margin-right: 270px;">fx-999IES PLUS</I>
+                
+                <p class="green" style="text-align: left; margin-left: 10px; padding-top: 0%; margin-top: 0%; margin-bottom: 0%;">
+                    nATARUL-U.P.A.M
+                </p>
+            </div>
+            <ul>
+                <li style="margin-left: 0px;">
+                    
+                        <input type="display" id="inscreen" name="inscreen" readonly>
+                        <input type="display" id="outscreen" name="outscreen"  readonly>
+                    
+                </li>
+            </ul>
+
+            <ul class="top">
+                <li>
+                    <h5 style="color:orange;" id=" output">SHIFT</h5>
+                    <input id="left" type="button" value="" class="toprow">
+                </li>
+
+                <li style="margin-top: 25px;">
+                    <h5 style="color: red;">ALPHA</h5>
+                    <input id="left" type="button" class="toprow">
+                </li>
+
+                <li style="display: inline-flex;">
+                    <input type="button" value="REP" id="replayleft" class="toprow">
+                    <input type="button" value="LAY" id="replayright" class="toprow">
+                </li>
+
+                <li style="margin-top: 25px;">
+                    <h5 id="modesetup">MODE<em style="color: orange;">SETUP</em> </h5>
+                    <input id="right" type="button" class="toprow"
+                        onclick=" inscreen.value ='1:COMP 2:COMPLX 3:STAT 4:BASE-N 5:EQN 6:MATRIX 7:TABLE 8:VECTOR'">
+                </li>
+
+                <li>
+                    <h5>ON</h5>
+                    <input id="right" type="button" class="toprow" class="ON" onclick=" inscreen.value ='', outscreen.value=''; alert('CASIO') ;">
+                </li>
+            </ul>
+
+
+            <ul>
+                <li>
+                    <h5 style="color: orange;">SOLVE <em style="color: red;">=</em></h5>
+                    <input type="button" value="CALC" class="middlerow" onclick=" outscreen.value = eval (inscreen.value)">
+                </li>
+
+                <li>
+                    <h5>&#8315;<em style="color:red">:</em></h5>
+                    <input type="button" class="middlerow" value="&int;" onclick="inscreen.value +=''">
+                </li>
+
+                <li>
+                    <h5 class="orange"><i> x!</i></h5>
+                    <input type="button" class="middlerow" value="x^-1" onclick=" inscreen.value +='*(1/'">
+                </li>
+
+                <li>
+                    <h5 class="orange">&Sigma;</h5>
+                    <input type="button" class="middlerow" value="log" onclick="inscreen.value='log('">
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>
+                    <h5 class="orange">x * y/z</h5>
+                    <input type="button" value="x/y " class="middlerow" onclick="inscreen.value +='/'">
+
+                </li>
+
+                <li>
+                    <h5 class="orange"><sup>3</sup>&#8730</h5>
+                    <input type="button" value="&#8730" class="middlerow" onclick="inscreen.value +='&#8730'">
+                </li>
+
+                <li>
+                    <h5><em class="orange"><i>x<sup>3</sup></i></em> <em class="green">DEC</em></h5>
+                    <input type="button" value="x &#178" class="middlerow" onclick="inscreen.value += '**2'">
+                </li>
+
+                <li>
+                    <h5><em class="orange">&#8730</em> <em class="green">HEX</em></h5>
+                    <input type="button" value="x" class="middlerow" onclick="inscreen.value +=''">
+                </li>
+
+                <li>
+                    <h5><em class="orange">10<sup><em><em></sup></em> <em class="green">BIN</em></h5>
+                    <input type="button" value="log" class="middlerow" onclick="inscreen.value +='log('">
+                </li>
+
+                <li>
+                    <h5><em class="orange"><i>e</i></em> <em class="green">OCT</em></h5>
+                    <input type="button" value="ln" class="middlerow" onclick="inscreen.value +='ln('">
+                </li>
+
+            </ul>
+
+            <ul>
+
+                <li>
+                    <h5 class="green" id="abc">[<em class=""></em>] [<em class="red">A</em>]</h5>
+                    <input type="button" value="(-)" class="middlerow" onclick="inscreen.value +='-'">
+                </li>
+
+                <li>
+                    <h5 class="orange" id="abc"><em class="green">[<em class="red">B</em>]</em></h5>
+                    <input type="button" value="'''" class="middlerow">
+                </li>
+
+                <li>
+                    <h5 class="orange" id="abc">Abs<em class="green">[<em class="red">C</em>]</em></h5>
+                    <input type="button" value="hyp" class="middlerow" onclick="inscreen.value +=''">
+                </li>
+
+                <li>
+                    <h5 class="orange">sin<sup>-1</sup><em class="green">[<em class="red">D</em>]</em></h5>
+                    <input type="button" value="sin" class="middlerow" onclick="inscreen.value +='sin('">
+                </li>
+
+                <li>
+                    <h5 class="orange">cos<sup>-1</sup><em class="green">[<em class="red">E</em>]</em></h5>
+                    <input type="button" value="cos" class="middlerow" onclick="inscreen.value +='cos('">
+                </li>
+
+                <li>
+                    <h5 class="orange">tan<sup>-1</sup><em class="green">[<em class="red">F</em>]</em></h5>
+                    <input type="button" value="tan" class="middlerow" onclick="inscreen.value +='tan('">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h5 class="orange">STO</h5>
+                    <input type="button" value="RCL" class="middlerow" onclick="inscreen.value +=''">
+                </li>
+
+                <li>
+                    <h5 class="orange"><-<em class="green"><i>i</i></em></h5>
+                    <input type="button" value="ENG" class="middlerow" onclick="inscreen.value +=''">
+                </li>
+
+                <li>
+                    <h5 class="orange">%</h5>
+                    <input type="button" value="(" class="middlerow" onclick="inscreen.value +='('">
+                </li>
+
+                <li>
+                    <h5 class="orange">' <em style="color: red;"> X</em></h5>
+                    <input type="button" value=")" class="middlerow" onclick="inscreen.value +=')'">
+                </li>
+
+                <li>
+                    <h5 class="orange"><em class="red">Y</em></h5>
+                    <input type="button" value="S.D" class="middlerow" onclick="inscreen.value +=''">
+                </li>
+
+                <li>
+                    <h5 class="orange">M-<em class="red">M</em></h5>
+                    <input type="button" value="M+" class="middlerow" onclick="inscreen.value +=''">
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>
+                    <h5 class="orange">CONST</h5>
+                    <input type="button" value="7" class="bottomrow" onclick="inscreen.value +=7">
+                </li>
+
+                <li>
+                    <h5 class="orange">CONV</h5>
+                    <input type="button" value="8" class="bottomrow" onclick="inscreen.value +=8">
+                </li>
+
+                <li>
+                    <h5 class="orange">CLR</h5>
+                    <input type="button" value="9" class="bottomrow" onclick="inscreen.value +=9">
+                </li>
+
+                <li>
+                    <h5 class="orange">INS</h5>
+                    <input type="button" value="DEL" class="delac"
+                        onclick=" inscreen.value = inscreen.value.toString().slice(0,-1), outscreen.value=''">
+                </li>
+
+                <li>
+                    <h5 class="orange">OFF</h5>
+                    <input type="button" value="AC" class="delac" onclick="inscreen.value ='', outscreen.value=''">
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>
+                    <h5 class="orange">MATRIX</h5>
+                    <input type="button" value="4" class="bottomrow" onclick="inscreen.value +=4">
+                </li>
+
+                <li>
+                    <h5 class="orange">VECTOR</h5>
+                    <input type="button" value="5" class="bottomrow" onclick="inscreen.value +=5">
+                </li>
+
+                <li>
+                    <input type="button" value="6" class="bottomrow nolabel" onclick="inscreen.value +=6">
+                </li>
+
+                <li>
+                    <h5 class="orange">nCr</h5>
+                    <input type="button" value="x" class="bottomrow" onclick="inscreen.value +='*'">
+                </li>
+
+                <li>
+                    <h5 class="orange">nPr</h5>
+                    <input type="button" value="&divide" class="bottomrow" onclick="inscreen.value +='/'">
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>
+                    <h5 class="green">[<em class="orange">STAT</em>]</h5>
+                    <input type="button" value="1" class="bottomrow" onclick="inscreen.value +=1">
+                </li>
+
+                <li>
+                    <h5 class="green">[<em class="orange">CMPLX</em>]</h5>
+                    <input type="button" value="2" class="bottomrow" onclick="inscreen.value +=2">
+                </li>
+
+                <li>
+                    <h5 class="green">[<em class="orange">BASE</em>]</h5>
+                    <input type="button" value="3" class="bottomrow" onclick="inscreen.value +=3">
+                </li>
+
+                <li>
+                    <h5 class="orange">Rec</h5>
+                    <input type="button" value="+" class="bottomrow" onclick="inscreen.value +='+'">
+                </li>
+
+                <li>
+                    <h5 class="orange">Pol</h5>
+                    <input type="button" value="-" class="bottomrow" onclick="inscreen.value +='-'">
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>
+                    <h5 class="orange">Rnd</h5>
+                    <input type="button" value="0" class="bottomrow" onclick="inscreen.value +=0">
+                </li>
+
+                <li>
+                    <h5 class="orange" style="font-size: 12px; margin-bottom: 1px;"> Ran# <em class="red">Ranint</em>
+                    </h5>
+                    <input type="button" value="." class="bottomrow" onclick="inscreen.value +='.'">
+                </li>
+
+                <li>
+                    <h5 class="orange">&pi;<em class="red"><i>e</i></em></h5>
+                    <input type="button" value="x10" class="bottomrow" onclick="inscreen.value +='*10**'">
+                </li>
+
+                <li>
+                    <h5 class="orange">DRG</h5>
+                    <input type="button" value="Ans" id="myAns" class="bottomrow" onclick="inscreen.value +=outscreen.value">
+                </li>
+
+                <li>
+                    <h5></h5>
+                    <input type="button" value="=" id="equals" class="bottomrow nolabel"
+                        onclick="outscreen.value = eval(inscreen.value)">
+                </li>
+
+            </ul>
+            </div>
+
+            
+        </form>
+    </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="Calculator.js"></script>
+</body>
+
+</html>
