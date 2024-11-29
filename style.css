@@ -5,8 +5,7 @@
 }
 html{
     display: flex;
-    overflow: none;
-    justify-content: se;
+    justify-content: center;
     align-items: center;
 }
 
@@ -16,19 +15,16 @@ body {
     font-family: sans-serif;
     background-color: hsl(215, 88%, 10%);
     color: white;
-    overflow: none;
 }
 
 nav {
         display: flex;
         justify-content: space-between;
         justify-self: center;
-        overflow: none;
-        width: 100%;
+        width: 90vw;
         height: 100%;
         padding-top: 5%;
         padding-bottom: 5%;
-        background: hsl(216, 70%, 16%);
 }
 
 header {
@@ -37,6 +33,8 @@ header {
     top: 0;
     width: 100%;
     margin: 0;
+    background: hsl(216, 70%, 16%);
+    border-bottom: 1px solid white;
 }
 
 
@@ -54,10 +52,15 @@ div>hr {
     padding: 5%;
 }
 
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
 .icon{
     border: none;
     text-decoration: none;
-    margin-left: 1%;
     background-color: hsl(216, 50%, 16%);
     color: white;
 }
@@ -98,7 +101,12 @@ section {
     -o-border-radius: 25px;
     border-radius: 25px;
     box-shadow: 0 0 10px rgb(90, 90, 90);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
 }
+
 p{
     margin-top: 1%;
     margin-bottom: 1%;
@@ -123,8 +131,7 @@ article {
     margin: 1%;
 }
 
- h1{
-            margin-bottom: 5%;
+ h1{        margin-bottom: 1%;
             font-family: Arial, Helvetica, sans-serif;
             float: left;
 }
@@ -136,6 +143,7 @@ iframe {
     width: 90%;
     display: flex;
     border: none;
+    overflow: hidden;
 
 
 }
@@ -194,8 +202,29 @@ label{
     background-color: white;
     color: hsl(216, 50%, 16%);
 }
+
 form {
     margin-top: 5% ;
+    width: 100%;
+}
+.contact_info_site{
+
+    display: flex;
+    gap: 1%;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-content: space-between;
+
+}
+
+
+.contact_section {
+            border: 1px solid white;
+            padding: 10%;
+            display:  flex;
+            flex-direction: column;
+            width: 100%;
 }
 
 
@@ -220,7 +249,7 @@ form {
     align-items: center;
 }
 
-.menubar:hover + .mobile_menu{
+.menubar:hover + .menu{
         display:flex;
         flex-direction: column;
 
@@ -229,7 +258,7 @@ form {
  }
 
 
-.mobile_menu{
+.menu{
     display: none;
     padding: 1%;
     border-radius: 2px;
@@ -251,6 +280,7 @@ main {
         margin-top: 5%;
         margin-top: 5%;
     }
+
     iframe {
         height: 60vh;
     }
@@ -261,7 +291,7 @@ main {
 
     .first_last{
         display: flex;
-justify-content: space-between;
+        justify-content: space-between;
     }
 
     input {
@@ -297,19 +327,17 @@ textarea {
         min-width: 60%;
     }
 
-    .mobile_menu{
-        display: flex;
-        overflow: hidden;
-    }
+
     iframe {
         height: 100vh;
     }
 
    .form_section {
     padding: 0%;
+    width: 90%;
    }
 
-input {
+ input {
     height: 2rem;
 }
 
